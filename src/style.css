@@ -1,3 +1,45 @@
-h1 {
+html {
+  background-color: #0d0e0e;
+  color: white;
   font-family: Arial, Helvetica, sans-serif;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border: 1px solid #333333;
+  text-align: left;
+  padding: 8px;
+}
+
+th {
+  background-color: #212122;
+}
+
+tr > td {
+  width: fit-content;
+}
+
+tr > td:has(span) {
+  text-align: end;
+}
+
+tr > td > span.tableValue {
+  margin-left: 0;
+  margin-right: 0.2em;
+  color: white;
+  width: 10vw;
+}
+
+tr > td > span:not(.tableValue) {
+  text-align: end;
+  color: gray;
+}
+
+.min {
+  width: 5em;
 }
